@@ -273,11 +273,6 @@
             {
                 "name": "Let Expression",
                 "url": "let-expression"
-            },
-            {
-                "name": "Configurable Variables",
-                "url": "configurable",
-                "disablePlayground": true
             }
         ]
     },
