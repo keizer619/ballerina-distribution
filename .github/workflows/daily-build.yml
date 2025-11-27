@@ -107,8 +107,8 @@ jobs:
             Ballerina Version: ${{ steps.project-version.outputs.version }}
           prerelease: true
           files: |
-            ballerina/build/distributions/ballerina-*-swan-lake.zip
-            installers/linux-deb/target/ballerina-*-linux-x64.deb
+            ballerina/build/distributions/ballerina-${{ steps.project-version.outputs.sversion }}.zip
+            installers/linux-deb/target/ballerina-${{ steps.project-version.outputs.version }}-linux-x64.deb
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
